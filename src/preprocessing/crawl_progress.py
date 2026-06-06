@@ -10,7 +10,7 @@ from typing import Any
 
 from src.constants import platform_file_prefix
 
-PROGRESS_FILENAME = "crawl_progress.json"
+PROGRESS_FILENAME = "crawl_progress_{prefix}.json"
 
 
 def slugify(name: str) -> str:
@@ -23,12 +23,13 @@ def category_filename(category_name: str, prefix: str) -> str:
     return f"{prefix}_{slugify(category_name)}.json"
 
 
-def progress_path(raw_dir: Path) -> Path:
-    return raw_dir / PROGRESS_FILENAME
+def progress_path(raw_dir: Path, platform: str) -> Path:
+    prefix = platform_file_prefix(platform)
+    return raw_dir / PROGRESS_FILENAME.format(prefix=prefix)
 
 
 def load_progress(raw_dir: Path, platform: str) -> dict[str, Any]:
-    path = progress_path(raw_dir)
+    path = progress_path(raw_dir, platform)
     default = {
         "platform": platform,
         "completed": [],
@@ -49,7 +50,8 @@ def load_progress(raw_dir: Path, platform: str) -> dict[str, Any]:
 def save_progress(raw_dir: Path, progress: dict[str, Any]) -> None:
     raw_dir.mkdir(parents=True, exist_ok=True)
     progress["last_session_at"] = datetime.now(timezone.utc).isoformat()
-    progress_path(raw_dir).write_text(
+    platform = progress.get("platform", "Lazada")
+    progress_path(raw_dir, platform).write_text(
         json.dumps(progress, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )

@@ -23,7 +23,25 @@ def get_settings() -> dict[str, Any]:
 
 def get_categories() -> list[dict[str, Any]]:
     data = load_yaml("categories.yaml")
-    return data["categories"]
+    # Backward-compatible:
+    # - Old format: { categories: [...] } (single-platform)
+    # - New format: { platforms: { Lazada: [...], Shopee: [...], Tiki: [...] } }
+    if "categories" in data:
+        return data["categories"]
+
+    platforms = data.get("platforms", {})
+    categories: list[dict[str, Any]] = []
+    for platform_name, items in platforms.items():
+        for item in items or []:
+            categories.append(
+                {
+                    "platform": platform_name,
+                    "name": item.get("name"),
+                    "path": item.get("path"),
+                    "target_count": item.get("target_count", 0),
+                }
+            )
+    return categories
 
 
 def resolve_path(key: str) -> Path:

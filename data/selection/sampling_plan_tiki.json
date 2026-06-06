@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-06-06T01:24:59.360743+00:00",
+  "platform": "Tiki",
+  "crawl_method": "requests_ajax",
+  "target_records_final": 15000,
+  "total_planned_clean": 15000,
+  "total_planned_crawl_with_buffer": 16488,
+  "crawl_buffer_ratio": 1.1,
+  "stratified": true,
+  "categories": [
+    {
+      "category_name": "Điện thoại di động",
+      "path": "dien-thoai-di-dong",
+      "category_url": "https://www.lazada.vn/dien-thoai-di-dong/",
+      "search_url": "https://www.lazada.vn/dien-thoai-di-dong/",
+      "target_count_clean": 938,
+      "target_count_crawl": 1031,
+      "max_pages": 35,
+      "url_key": "dien-thoai-di-dong"
+    },
+    {
+      "category_name": "Laptop",
+      "path": "laptop",
+      "category_url": "https://www.lazada.vn/laptop/",
+      "search_url": "https://www.lazada.vn/laptop/",
+      "target_count_clean": 938,
+      "target_count_crawl": 1031,
+      "max_pages": 35,
+      "url_key": "laptop"
+    },
+    {
+      "category_name": "Máy tính bảng",
+      "path": "may-tinh-bang",
+      "category_url": "https://www.lazada.vn/may-tinh-bang/",
+      "search_url": "https://www.lazada.vn/may-tinh-bang/",
+      "target_count_clean": 938,
+      "target_count_crawl": 1031,
+      "max_pages": 35,
+      "url_key": "may-tinh-bang"
+    },
+    {
+      "category_name": "Pin sạc dự phòng",
+      "path": "pin-sac-du-phong",
+      "category_url": "https://www.lazada.vn/pin-sac-du-phong/",
+      "search_url": "https://www.lazada.vn/pin-sac-du-phong/",
+      "target_count_clean": 938,
+      "target_count_crawl": 1031,
+      "max_pages": 35,
+      "url_key": "pin-sac-du-phong"
+    },
+    {
+      "category_name": "Tai nghe không dây",
+      "path": "shop-wireless-earbuds",
+      "category_url": "https://www.lazada.vn/shop-wireless-earbuds/",
+      "search_url": "https://www.lazada.vn/shop-wireless-earbuds/",
+      "target_count_clean": 938,
+      "target_count_crawl": 1031,
+      "max_pages": 35,
+      "url_key": "shop-wireless-earbuds"
+    },
+    {
+      "category_name": "Máy ảnh máy quay phim",
+      "path": "may-anh-may-quay-phim",
+      "category_url": "https://www.lazada.vn/may-anh-may-quay-phim/",
+      "search_url": "https://www.lazada.vn/may-anh-may-quay-phim/",
+      "target_count_clean": 938,
+      "target_count_crawl": 1031,
+      "max_pages": 35,
+      "url_key": "may-anh-may-quay-phim"
+    },
+    {
+      "category_name": "Tủ lạnh",
+      "path": "tu-lanh",
+      "category_url": "https://www.lazada.vn/tu-lanh/",
+      "search_url": "https://www.lazada.vn/tu-lanh/",
+      "target_count_clean": 938,
+      "target_count_crawl": 1031,
+      "max_pages": 35,
+      "url_key": "tu-lanh"
+    },
+    {
+      "category_name": "Máy giặt",
+      "path": "may-giat",
+      "category_url": "https://www.lazada.vn/may-giat/",
+      "search_url": "https://www.lazada.vn/may-giat/",
+      "target_count_clean": 938,
+      "target_count_crawl": 1031,
+      "max_pages": 35,
+      "url_key": "may-giat"
+    },
+    {
+      "category_name": "Máy lạnh",
+      "path": "may-lanh",
+      "category_url": "https://www.lazada.vn/may-lanh/",
+      "search_url": "https://www.lazada.vn/may-lanh/",
+      "target_count_clean": 937,
+      "target_count_crawl": 1030,
+      "max_pages": 35,
+      "url_key": "may-lanh"
+    },
+    {
+      "category_name": "Áo phông & Áo ba lỗ",
+      "path": "shop-t-shirts-&-tanks",
+      "category_url": "https://www.lazada.vn/shop-t-shirts-&-tanks/",
+      "search_url": "https://www.lazada.vn/shop-t-shirts-&-tanks/",
+      "target_count_clean": 937,
+      "target_count_crawl": 1030,
+      "max_pages": 35,
+      "url_key": "shop-t-shirts-&-tanks"
+    },
+    {
+      "category_name": "Quần jeans",
+      "path": "shop-men-jeans",
+      "category_url": "https://www.lazada.vn/shop-men-jeans/",
+      "search_url": "https://www.lazada.vn/shop-men-jeans/",
+      "target_count_clean": 937,
+      "target_count_crawl": 1030,
+      "max_pages": 35,
+      "url_key": "shop-men-jeans"
+    },
+    {
+      "category_name": "Dưỡng da & Serum",
+      "path": "duong-da-va-serum",
+      "category_url": "https://www.lazada.vn/duong-da-va-serum/",
+      "search_url": "https://www.lazada.vn/duong-da-va-serum/",
+      "target_count_clean": 937,
+      "target_count_crawl": 1030,
+      "max_pages": 35,
+      "url_key": "duong-da-va-serum"
+    },
+    {
+      "category_name": "Son thỏi",
+      "path": "son-thoi",
+      "category_url": "https://www.lazada.vn/son-thoi/",
+      "search_url": "https://www.lazada.vn/son-thoi/",
+      "target_count_clean": 937,
+      "target_count_crawl": 1030,
+      "max_pages": 35,
+      "url_key": "son-thoi"
+    },
+    {
+      "category_name": "Bách hóa online",
+      "path": "bach-hoa-online",
+      "category_url": "https://www.lazada.vn/bach-hoa-online/",
+      "search_url": "https://www.lazada.vn/bach-hoa-online/",
+      "target_count_clean": 937,
+      "target_count_crawl": 1030,
+      "max_pages": 35,
+      "url_key": "bach-hoa-online"
+    },
+    {
+      "category_name": "Giường",
+      "path": "giuong",
+      "category_url": "https://www.lazada.vn/giuong/",
+      "search_url": "https://www.lazada.vn/giuong/",
+      "target_count_clean": 937,
+      "target_count_crawl": 1030,
+      "max_pages": 35,
+      "url_key": "giuong"
+    },
+    {
+      "category_name": "Bóng đá",
+      "path": "bong-da",
+      "category_url": "https://www.lazada.vn/bong-da/",
+      "search_url": "https://www.lazada.vn/bong-da/",
+      "target_count_clean": 937,
+      "target_count_crawl": 1030,
+      "max_pages": 35,
+      "url_key": "bong-da"
+    }
+  ]
+}

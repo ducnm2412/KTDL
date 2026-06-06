@@ -61,6 +61,12 @@ def main() -> None:
         action="store_true",
         help="Không dừng ngay khi 1 danh mục fail",
     )
+    parser.add_argument(
+        "--platform",
+        type=str,
+        default=None,
+        help="Chỉ crawl cho 1 sàn cụ thể (Lazada/Shopee/Tiki)",
+    )
     args = parser.parse_args()
 
     stop_on_failure = not args.continue_on_failure
@@ -69,6 +75,7 @@ def main() -> None:
             from src.preprocessing.crawl import run_crawl_all
 
             result = run_crawl_all(
+                platform=args.platform,
                 keep_browser_open=args.keep_browser,
                 force_hours=args.force,
                 rest_between_sessions=not args.no_rest,
@@ -77,6 +84,7 @@ def main() -> None:
         else:
             result = run_crawl_session(
                 session=args.session,
+                platform=args.platform,
                 merge_only=args.merge_only,
                 keep_browser_open=args.keep_browser,
                 force_hours=args.force,

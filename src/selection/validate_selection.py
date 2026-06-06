@@ -36,11 +36,23 @@ def validate_selection_config() -> ValidationResult:
     if len(categories) == 0:
         result.errors.append("categories.yaml rỗng.")
 
+    configured_platforms = set(
+        settings["project"].get("platforms") or [settings["project"].get("platform", "Lazada")]
+    )
+
     for i, cat in enumerate(categories):
+        platform = cat.get("platform")
+        if not platform:
+            result.errors.append(f"Danh mục index {i} thiếu platform.")
+        elif platform not in configured_platforms:
+            result.errors.append(
+                f"Danh mục '{cat.get('name')}' có platform '{platform}' "
+                f"không nằm trong project.platforms {sorted(configured_platforms)}."
+            )
         if not cat.get("name"):
             result.errors.append(f"Danh mục index {i} thiếu name.")
         if not cat.get("path"):
-            result.errors.append(f"Danh mục '{cat.get('name')}' thiếu path (Lazada).")
+            result.errors.append(f"Danh mục '{cat.get('name')}' thiếu path.")
         if cat.get("target_count", 0) <= 0:
             result.errors.append(f"Danh mục '{cat.get('name')}' target_count phải > 0.")
 

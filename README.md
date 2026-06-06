@@ -32,6 +32,7 @@ python -m src.pipeline.run --step <selection|crawl|clean>
 ```
 
 Hiện tại project đã triển khai:
+
 - `selection`
 - `crawl`
 - `clean`
@@ -47,6 +48,7 @@ python -m src.pipeline.run --step selection
 ```
 
 Output chính:
+
 - `data/selection/sampling_plan.json`
 - `data/selection/selection_report.md`
 
@@ -77,6 +79,7 @@ python -m src.pipeline.run --step crawl --all --continue-on-failure --force
 ```
 
 Output crawl:
+
 - `data/raw/categories/lazada_*.json`
 - `data/raw/crawl_progress.json`
 - `data/raw/lazada_raw_merged.json` (khi merge)
@@ -90,6 +93,7 @@ python -m src.pipeline.run --step clean
 ```
 
 Luồng clean hiện tại:
+
 1. Mapping raw -> schema clean bằng pandas
 2. Parse numeric fields
 3. Xử lý missing + rule nghiệp vụ
@@ -98,6 +102,7 @@ Luồng clean hiện tại:
 6. Stratified sampling theo `data/selection/sampling_plan.json`
 
 Output clean:
+
 - `data/clean/lazada_10k_clean.json`
 
 ## 5) File cấu hình quan trọng

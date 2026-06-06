@@ -3,6 +3,8 @@ from enum import Enum
 
 class Platform(str, Enum):
     LAZADA = "Lazada"
+    SHOPEE = "Shopee"
+    TIKI = "Tiki"
 
 
 class LabelClass(str, Enum):

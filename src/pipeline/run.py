@@ -62,6 +62,12 @@ def main() -> None:
         help="Không đóng Chrome sau crawl",
     )
     parser.add_argument(
+        "--platform",
+        type=str,
+        default=None,
+        help="Chỉ crawl cho 1 sàn cụ thể (Lazada/Shopee/Tiki)",
+    )
+    parser.add_argument(
         "--project-root",
         type=Path,
         default=Path(__file__).resolve().parents[2],
@@ -83,6 +89,7 @@ def main() -> None:
                 from src.preprocessing.crawl import run_crawl_all
 
                 result = run_crawl_all(
+                    platform=args.platform,
                     keep_browser_open=args.keep_browser,
                     force_hours=args.force,
                     rest_between_sessions=not args.no_rest,
@@ -93,6 +100,7 @@ def main() -> None:
 
                 result = run_crawl_session(
                     session=args.session,
+                    platform=args.platform,
                     merge_only=args.merge_only,
                     keep_browser_open=args.keep_browser,
                     force_hours=args.force,

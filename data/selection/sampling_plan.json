@@ -1,155 +1,272 @@
 {
-  "generated_at": "2026-06-06T01:24:59.360743+00:00",
-  "platform": "Lazada",
+  "generated_at": "2026-06-06T01:52:16.664827+00:00",
+  "platforms": [
+    "Lazada",
+    "Shopee",
+    "Tiki"
+  ],
   "crawl_method": "requests_ajax",
-  "target_records_final": 15000,
-  "total_planned_clean": 15000,
-  "total_planned_crawl_with_buffer": 16488,
+  "target_records_final": 17000,
+  "total_planned_clean": 17000,
+  "total_planned_crawl_with_buffer": 18696,
   "crawl_buffer_ratio": 1.1,
   "stratified": true,
+  "per_platform": {
+    "Lazada": {
+      "planned_clean": 7000,
+      "planned_crawl_with_buffer": 7696,
+      "categories": 8
+    },
+    "Shopee": {
+      "planned_clean": 6000,
+      "planned_crawl_with_buffer": 6600,
+      "categories": 8
+    },
+    "Tiki": {
+      "planned_clean": 4000,
+      "planned_crawl_with_buffer": 4400,
+      "categories": 8
+    }
+  },
   "categories": [
     {
+      "platform": "Lazada",
       "category_name": "Điện thoại di động",
       "path": "dien-thoai-di-dong",
       "category_url": "https://www.lazada.vn/dien-thoai-di-dong/",
       "search_url": "https://www.lazada.vn/dien-thoai-di-dong/",
-      "target_count_clean": 938,
-      "target_count_crawl": 1031,
+      "target_count_clean": 875,
+      "target_count_crawl": 962,
       "max_pages": 35
     },
     {
+      "platform": "Lazada",
       "category_name": "Laptop",
       "path": "laptop",
       "category_url": "https://www.lazada.vn/laptop/",
       "search_url": "https://www.lazada.vn/laptop/",
-      "target_count_clean": 938,
-      "target_count_crawl": 1031,
+      "target_count_clean": 875,
+      "target_count_crawl": 962,
       "max_pages": 35
     },
     {
+      "platform": "Lazada",
       "category_name": "Máy tính bảng",
       "path": "may-tinh-bang",
       "category_url": "https://www.lazada.vn/may-tinh-bang/",
       "search_url": "https://www.lazada.vn/may-tinh-bang/",
-      "target_count_clean": 938,
-      "target_count_crawl": 1031,
+      "target_count_clean": 875,
+      "target_count_crawl": 962,
       "max_pages": 35
     },
     {
+      "platform": "Lazada",
       "category_name": "Pin sạc dự phòng",
       "path": "pin-sac-du-phong",
       "category_url": "https://www.lazada.vn/pin-sac-du-phong/",
       "search_url": "https://www.lazada.vn/pin-sac-du-phong/",
-      "target_count_clean": 938,
-      "target_count_crawl": 1031,
+      "target_count_clean": 875,
+      "target_count_crawl": 962,
       "max_pages": 35
     },
     {
+      "platform": "Lazada",
       "category_name": "Tai nghe không dây",
       "path": "shop-wireless-earbuds",
       "category_url": "https://www.lazada.vn/shop-wireless-earbuds/",
       "search_url": "https://www.lazada.vn/shop-wireless-earbuds/",
-      "target_count_clean": 938,
-      "target_count_crawl": 1031,
+      "target_count_clean": 875,
+      "target_count_crawl": 962,
       "max_pages": 35
     },
     {
-      "category_name": "Máy ảnh máy quay phim",
-      "path": "may-anh-may-quay-phim",
-      "category_url": "https://www.lazada.vn/may-anh-may-quay-phim/",
-      "search_url": "https://www.lazada.vn/may-anh-may-quay-phim/",
-      "target_count_clean": 938,
-      "target_count_crawl": 1031,
-      "max_pages": 35
-    },
-    {
-      "category_name": "Tủ lạnh",
-      "path": "tu-lanh",
-      "category_url": "https://www.lazada.vn/tu-lanh/",
-      "search_url": "https://www.lazada.vn/tu-lanh/",
-      "target_count_clean": 938,
-      "target_count_crawl": 1031,
-      "max_pages": 35
-    },
-    {
-      "category_name": "Máy giặt",
-      "path": "may-giat",
-      "category_url": "https://www.lazada.vn/may-giat/",
-      "search_url": "https://www.lazada.vn/may-giat/",
-      "target_count_clean": 938,
-      "target_count_crawl": 1031,
-      "max_pages": 35
-    },
-    {
-      "category_name": "Máy lạnh",
-      "path": "may-lanh",
-      "category_url": "https://www.lazada.vn/may-lanh/",
-      "search_url": "https://www.lazada.vn/may-lanh/",
-      "target_count_clean": 937,
-      "target_count_crawl": 1030,
-      "max_pages": 35
-    },
-    {
-      "category_name": "Áo phông & Áo ba lỗ",
-      "path": "shop-t-shirts-&-tanks",
-      "category_url": "https://www.lazada.vn/shop-t-shirts-&-tanks/",
-      "search_url": "https://www.lazada.vn/shop-t-shirts-&-tanks/",
-      "target_count_clean": 937,
-      "target_count_crawl": 1030,
-      "max_pages": 35
-    },
-    {
-      "category_name": "Quần jeans",
-      "path": "shop-men-jeans",
-      "category_url": "https://www.lazada.vn/shop-men-jeans/",
-      "search_url": "https://www.lazada.vn/shop-men-jeans/",
-      "target_count_clean": 937,
-      "target_count_crawl": 1030,
-      "max_pages": 35
-    },
-    {
+      "platform": "Lazada",
       "category_name": "Dưỡng da & Serum",
       "path": "duong-da-va-serum",
       "category_url": "https://www.lazada.vn/duong-da-va-serum/",
       "search_url": "https://www.lazada.vn/duong-da-va-serum/",
-      "target_count_clean": 937,
-      "target_count_crawl": 1030,
+      "target_count_clean": 875,
+      "target_count_crawl": 962,
       "max_pages": 35
     },
     {
+      "platform": "Lazada",
       "category_name": "Son thỏi",
       "path": "son-thoi",
       "category_url": "https://www.lazada.vn/son-thoi/",
       "search_url": "https://www.lazada.vn/son-thoi/",
-      "target_count_clean": 937,
-      "target_count_crawl": 1030,
+      "target_count_clean": 875,
+      "target_count_crawl": 962,
       "max_pages": 35
     },
     {
+      "platform": "Lazada",
       "category_name": "Bách hóa online",
       "path": "bach-hoa-online",
       "category_url": "https://www.lazada.vn/bach-hoa-online/",
       "search_url": "https://www.lazada.vn/bach-hoa-online/",
-      "target_count_clean": 937,
-      "target_count_crawl": 1030,
+      "target_count_clean": 875,
+      "target_count_crawl": 962,
       "max_pages": 35
     },
     {
-      "category_name": "Giường",
-      "path": "giuong",
-      "category_url": "https://www.lazada.vn/giuong/",
-      "search_url": "https://www.lazada.vn/giuong/",
-      "target_count_clean": 937,
-      "target_count_crawl": 1030,
+      "platform": "Shopee",
+      "category_name": "Điện thoại di động",
+      "path": "dien-thoai",
+      "category_url": "https://shopee.vn/dien-thoai/",
+      "search_url": "https://shopee.vn/dien-thoai/",
+      "target_count_clean": 750,
+      "target_count_crawl": 825,
       "max_pages": 35
     },
     {
-      "category_name": "Bóng đá",
-      "path": "bong-da",
-      "category_url": "https://www.lazada.vn/bong-da/",
-      "search_url": "https://www.lazada.vn/bong-da/",
-      "target_count_clean": 937,
-      "target_count_crawl": 1030,
+      "platform": "Shopee",
+      "category_name": "Laptop",
+      "path": "laptop",
+      "category_url": "https://shopee.vn/laptop/",
+      "search_url": "https://shopee.vn/laptop/",
+      "target_count_clean": 750,
+      "target_count_crawl": 825,
+      "max_pages": 35
+    },
+    {
+      "platform": "Shopee",
+      "category_name": "Máy tính bảng",
+      "path": "may-tinh-bang",
+      "category_url": "https://shopee.vn/may-tinh-bang/",
+      "search_url": "https://shopee.vn/may-tinh-bang/",
+      "target_count_clean": 750,
+      "target_count_crawl": 825,
+      "max_pages": 35
+    },
+    {
+      "platform": "Shopee",
+      "category_name": "Pin sạc dự phòng",
+      "path": "pin-sac-du-phong",
+      "category_url": "https://shopee.vn/pin-sac-du-phong/",
+      "search_url": "https://shopee.vn/pin-sac-du-phong/",
+      "target_count_clean": 750,
+      "target_count_crawl": 825,
+      "max_pages": 35
+    },
+    {
+      "platform": "Shopee",
+      "category_name": "Tai nghe không dây",
+      "path": "tai-nghe",
+      "category_url": "https://shopee.vn/tai-nghe/",
+      "search_url": "https://shopee.vn/tai-nghe/",
+      "target_count_clean": 750,
+      "target_count_crawl": 825,
+      "max_pages": 35
+    },
+    {
+      "platform": "Shopee",
+      "category_name": "Dưỡng da & Serum",
+      "path": "duong-da",
+      "category_url": "https://shopee.vn/duong-da/",
+      "search_url": "https://shopee.vn/duong-da/",
+      "target_count_clean": 750,
+      "target_count_crawl": 825,
+      "max_pages": 35
+    },
+    {
+      "platform": "Shopee",
+      "category_name": "Son thỏi",
+      "path": "son-moi",
+      "category_url": "https://shopee.vn/son-moi/",
+      "search_url": "https://shopee.vn/son-moi/",
+      "target_count_clean": 750,
+      "target_count_crawl": 825,
+      "max_pages": 35
+    },
+    {
+      "platform": "Shopee",
+      "category_name": "Bách hóa online",
+      "path": "bach-hoa-online",
+      "category_url": "https://shopee.vn/bach-hoa-online/",
+      "search_url": "https://shopee.vn/bach-hoa-online/",
+      "target_count_clean": 750,
+      "target_count_crawl": 825,
+      "max_pages": 35
+    },
+    {
+      "platform": "Tiki",
+      "category_name": "Điện thoại di động",
+      "path": "dien-thoai-may-tinh-bang/c1789",
+      "category_url": "https://tiki.vn/dien-thoai-may-tinh-bang/c1789/",
+      "search_url": "https://tiki.vn/dien-thoai-may-tinh-bang/c1789/",
+      "target_count_clean": 500,
+      "target_count_crawl": 550,
+      "max_pages": 35
+    },
+    {
+      "platform": "Tiki",
+      "category_name": "Laptop",
+      "path": "laptop-may-vi-tinh-linh-kien/c1846",
+      "category_url": "https://tiki.vn/laptop-may-vi-tinh-linh-kien/c1846/",
+      "search_url": "https://tiki.vn/laptop-may-vi-tinh-linh-kien/c1846/",
+      "target_count_clean": 500,
+      "target_count_crawl": 550,
+      "max_pages": 35
+    },
+    {
+      "platform": "Tiki",
+      "category_name": "Máy tính bảng",
+      "path": "may-tinh-bang/c1794",
+      "category_url": "https://tiki.vn/may-tinh-bang/c1794/",
+      "search_url": "https://tiki.vn/may-tinh-bang/c1794/",
+      "target_count_clean": 500,
+      "target_count_crawl": 550,
+      "max_pages": 35
+    },
+    {
+      "platform": "Tiki",
+      "category_name": "Pin sạc dự phòng",
+      "path": "pin-sac-du-phong/c8464",
+      "category_url": "https://tiki.vn/pin-sac-du-phong/c8464/",
+      "search_url": "https://tiki.vn/pin-sac-du-phong/c8464/",
+      "target_count_clean": 500,
+      "target_count_crawl": 550,
+      "max_pages": 35
+    },
+    {
+      "platform": "Tiki",
+      "category_name": "Tai nghe không dây",
+      "path": "tai-nghe-khong-day/c8584",
+      "category_url": "https://tiki.vn/tai-nghe-khong-day/c8584/",
+      "search_url": "https://tiki.vn/tai-nghe-khong-day/c8584/",
+      "target_count_clean": 500,
+      "target_count_crawl": 550,
+      "max_pages": 35
+    },
+    {
+      "platform": "Tiki",
+      "category_name": "Dưỡng da & Serum",
+      "path": "cham-soc-da-mat/c1584",
+      "category_url": "https://tiki.vn/cham-soc-da-mat/c1584/",
+      "search_url": "https://tiki.vn/cham-soc-da-mat/c1584/",
+      "target_count_clean": 500,
+      "target_count_crawl": 550,
+      "max_pages": 35
+    },
+    {
+      "platform": "Tiki",
+      "category_name": "Son thỏi",
+      "path": "son-trang-diem-moi/c2740",
+      "category_url": "https://tiki.vn/son-trang-diem-moi/c2740/",
+      "search_url": "https://tiki.vn/son-trang-diem-moi/c2740/",
+      "target_count_clean": 500,
+      "target_count_crawl": 550,
+      "max_pages": 35
+    },
+    {
+      "platform": "Tiki",
+      "category_name": "Bách hóa online",
+      "path": "bach-hoa-online/c4384",
+      "category_url": "https://tiki.vn/bach-hoa-online/c4384/",
+      "search_url": "https://tiki.vn/bach-hoa-online/c4384/",
+      "target_count_clean": 500,
+      "target_count_crawl": 550,
       "max_pages": 35
     }
   ]

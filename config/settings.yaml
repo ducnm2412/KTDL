@@ -1,7 +1,7 @@
 project:
-  name: lazada-product-classification
-  target_records: 15000
-  platform: Lazada
+  name: ecommerce-product-classification
+  target_records: 17000
+  platforms: [Lazada, Shopee, Tiki]
   random_seed: 42
 
 paths:

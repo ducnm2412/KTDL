@@ -1,9 +1,13 @@
 {
-  "project_name": "lazada-product-classification",
+  "project_name": "ecommerce-product-classification",
   "problem_type": "multi_class_classification",
-  "platform": "Lazada",
-  "data_source": "lazada.vn AJAX API (realtime snapshot)",
-  "target_records": 10000,
+  "platforms": [
+    "Lazada",
+    "Shopee",
+    "Tiki"
+  ],
+  "data_source": "ecommerce APIs/crawl snapshots (Lazada, Shopee, Tiki)",
+  "target_records": 17000,
   "random_seed": 42,
   "label_classes": [
     "Hot Trend",
@@ -13,89 +17,153 @@
   ],
   "expected_label_count": 4,
   "min_class_ratio": 0.05,
-  "category_count": 16,
-  "total_planned_samples": 10000,
+  "category_count": 24,
+  "total_planned_samples": 17000,
   "stratified_by_category": true,
   "categories": [
     {
+      "platform": "Lazada",
       "name": "Điện thoại di động",
       "path": "dien-thoai-di-dong",
-      "target_count": 625
+      "target_count": 875
     },
     {
+      "platform": "Lazada",
       "name": "Laptop",
       "path": "laptop",
-      "target_count": 625
+      "target_count": 875
     },
     {
+      "platform": "Lazada",
       "name": "Máy tính bảng",
       "path": "may-tinh-bang",
-      "target_count": 625
+      "target_count": 875
     },
     {
+      "platform": "Lazada",
       "name": "Pin sạc dự phòng",
       "path": "pin-sac-du-phong",
-      "target_count": 625
+      "target_count": 875
     },
     {
+      "platform": "Lazada",
       "name": "Tai nghe không dây",
       "path": "shop-wireless-earbuds",
-      "target_count": 625
+      "target_count": 875
     },
     {
-      "name": "Máy ảnh máy quay phim",
-      "path": "may-anh-may-quay-phim",
-      "target_count": 625
-    },
-    {
-      "name": "Tủ lạnh",
-      "path": "tu-lanh",
-      "target_count": 625
-    },
-    {
-      "name": "Máy giặt",
-      "path": "may-giat",
-      "target_count": 625
-    },
-    {
-      "name": "Máy lạnh",
-      "path": "may-lanh",
-      "target_count": 625
-    },
-    {
-      "name": "Áo phông & Áo ba lỗ",
-      "path": "shop-t-shirts-&-tanks",
-      "target_count": 625
-    },
-    {
-      "name": "Quần jeans",
-      "path": "shop-men-jeans",
-      "target_count": 625
-    },
-    {
+      "platform": "Lazada",
       "name": "Dưỡng da & Serum",
       "path": "duong-da-va-serum",
-      "target_count": 625
+      "target_count": 875
     },
     {
+      "platform": "Lazada",
       "name": "Son thỏi",
       "path": "son-thoi",
-      "target_count": 625
+      "target_count": 875
     },
     {
+      "platform": "Lazada",
       "name": "Bách hóa online",
       "path": "bach-hoa-online",
-      "target_count": 625
+      "target_count": 875
     },
     {
-      "name": "Giường",
-      "path": "giuong",
-      "target_count": 625
+      "platform": "Shopee",
+      "name": "Điện thoại di động",
+      "path": "dien-thoai",
+      "target_count": 750
     },
     {
-      "name": "Bóng đá",
-      "path": "bong-da",
-      "target_count": 625
+      "platform": "Shopee",
+      "name": "Laptop",
+      "path": "laptop",
+      "target_count": 750
+    },
+    {
+      "platform": "Shopee",
+      "name": "Máy tính bảng",
+      "path": "may-tinh-bang",
+      "target_count": 750
+    },
+    {
+      "platform": "Shopee",
+      "name": "Pin sạc dự phòng",
+      "path": "pin-sac-du-phong",
+      "target_count": 750
+    },
+    {
+      "platform": "Shopee",
+      "name": "Tai nghe không dây",
+      "path": "tai-nghe",
+      "target_count": 750
+    },
+    {
+      "platform": "Shopee",
+      "name": "Dưỡng da & Serum",
+      "path": "duong-da",
+      "target_count": 750
+    },
+    {
+      "platform": "Shopee",
+      "name": "Son thỏi",
+      "path": "son-moi",
+      "target_count": 750
+    },
+    {
+      "platform": "Shopee",
+      "name": "Bách hóa online",
+      "path": "bach-hoa-online",
+      "target_count": 750
+    },
+    {
+      "platform": "Tiki",
+      "name": "Điện thoại di động",
+      "path": "dien-thoai-may-tinh-bang/c1789",
+      "target_count": 500
+    },
+    {
+      "platform": "Tiki",
+      "name": "Laptop",
+      "path": "laptop-may-vi-tinh-linh-kien/c1846",
+      "target_count": 500
+    },
+    {
+      "platform": "Tiki",
+      "name": "Máy tính bảng",
+      "path": "may-tinh-bang/c1794",
+      "target_count": 500
+    },
+    {
+      "platform": "Tiki",
+      "name": "Pin sạc dự phòng",
+      "path": "pin-sac-du-phong/c8464",
+      "target_count": 500
+    },
+    {
+      "platform": "Tiki",
+      "name": "Tai nghe không dây",
+      "path": "tai-nghe-khong-day/c8584",
+      "target_count": 500
+    },
+    {
+      "platform": "Tiki",
+      "name": "Dưỡng da & Serum",
+      "path": "cham-soc-da-mat/c1584",
+      "target_count": 500
+    },
+    {
+      "platform": "Tiki",
+      "name": "Son thỏi",
+      "path": "son-trang-diem-moi/c2740",
+      "target_count": 500
+    },
+    {
+      "platform": "Tiki",
+      "name": "Bách hóa online",
+      "path": "bach-hoa-online/c4384",
+      "target_count": 500
     }
   ]
 }

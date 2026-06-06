@@ -1,51 +1,87 @@
-# 16 danh mục Lazada — mục tiêu ~937-938 sản phẩm/danh mục → 15_000
-# path = slug trên lazada.vn (https://www.lazada.vn/{path}/)
-categories:
-  - name: Điện thoại di động
-    path: dien-thoai-di-dong
-    target_count: 938
-  - name: Laptop
-    path: laptop
-    target_count: 938
-  - name: Máy tính bảng
-    path: may-tinh-bang
-    target_count: 938
-  - name: Pin sạc dự phòng
-    path: pin-sac-du-phong
-    target_count: 938
-  - name: Tai nghe không dây
-    path: shop-wireless-earbuds
-    target_count: 938
-  - name: Máy ảnh máy quay phim
-    path: may-anh-may-quay-phim
-    target_count: 938
-  - name: Tủ lạnh
-    path: tu-lanh
-    target_count: 938
-  - name: Máy giặt
-    path: may-giat
-    target_count: 938
-  - name: Máy lạnh
-    path: may-lanh
-    target_count: 937
-  - name: Áo phông & Áo ba lỗ
-    path: shop-t-shirts-&-tanks
-    target_count: 937
-  - name: Quần jeans
-    path: shop-men-jeans
-    target_count: 937
-  - name: Dưỡng da & Serum
-    path: duong-da-va-serum
-    target_count: 937
-  - name: Son thỏi
-    path: son-thoi
-    target_count: 937
-  - name: Bách hóa online
-    path: bach-hoa-online
-    target_count: 937
-  - name: Giường
-    path: giuong
-    target_count: 937
-  - name: Bóng đá
-    path: bong-da
-    target_count: 937
+# Mục tiêu tổng: 17_000 bản ghi cho 3 sàn.
+# Phân bổ: Lazada 7_000, Shopee 6_000, Tiki 4_000 (Shopee > Tiki).
+#
+# Định dạng đa sàn:
+# platforms:
+#   <PlatformName>:
+#     - name: <tên danh mục>
+#       path: <slug hoặc path của danh mục trên sàn>
+#       target_count: <mục tiêu clean cho danh mục>
+platforms:
+  Lazada:
+    - name: Điện thoại di động
+      path: dien-thoai-di-dong
+      target_count: 875
+    - name: Laptop
+      path: laptop
+      target_count: 875
+    - name: Máy tính bảng
+      path: may-tinh-bang
+      target_count: 875
+    - name: Pin sạc dự phòng
+      path: pin-sac-du-phong
+      target_count: 875
+    - name: Tai nghe không dây
+      path: shop-wireless-earbuds
+      target_count: 875
+    - name: Dưỡng da & Serum
+      path: duong-da-va-serum
+      target_count: 875
+    - name: Son thỏi
+      path: son-thoi
+      target_count: 875
+    - name: Bách hóa online
+      path: bach-hoa-online
+      target_count: 875
+
+  Shopee:
+    - name: Điện thoại di động
+      path: dien-thoai
+      target_count: 750
+    - name: Laptop
+      path: laptop
+      target_count: 750
+    - name: Máy tính bảng
+      path: may-tinh-bang
+      target_count: 750
+    - name: Pin sạc dự phòng
+      path: pin-sac-du-phong
+      target_count: 750
+    - name: Tai nghe không dây
+      path: tai-nghe
+      target_count: 750
+    - name: Dưỡng da & Serum
+      path: duong-da
+      target_count: 750
+    - name: Son thỏi
+      path: son-moi
+      target_count: 750
+    - name: Bách hóa online
+      path: bach-hoa-online
+      target_count: 750
+
+  Tiki:
+    - name: Điện thoại di động
+      path: dien-thoai-may-tinh-bang/c1789
+      target_count: 500
+    - name: Laptop
+      path: laptop-may-vi-tinh-linh-kien/c1846
+      target_count: 500
+    - name: Máy tính bảng
+      path: may-tinh-bang/c1794
+      target_count: 500
+    - name: Pin sạc dự phòng
+      path: pin-sac-du-phong/c8464
+      target_count: 500
+    - name: Tai nghe không dây
+      path: tai-nghe-khong-day/c8584
+      target_count: 500
+    - name: Dưỡng da & Serum
+      path: cham-soc-da-mat/c1584
+      target_count: 500
+    - name: Son thỏi
+      path: son-trang-diem-moi/c2740
+      target_count: 500
+    - name: Bách hóa online
+      path: bach-hoa-online/c4384
+      target_count: 500

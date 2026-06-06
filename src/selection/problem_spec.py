@@ -14,7 +14,7 @@ class ProblemSpec:
     """Đặc tả phạm vi bài toán — output chính của Bước 1 Selection."""
 
     project_name: str
-    platform: str
+    platforms: list[str]
     target_records: int
     random_seed: int
     label_classes: list[str]
@@ -23,7 +23,7 @@ class ProblemSpec:
     total_planned_samples: int
     stratified: bool
     problem_type: str = "multi_class_classification"
-    data_source: str = "lazada.vn AJAX API (realtime snapshot)"
+    data_source: str = "ecommerce APIs/crawl snapshots (Lazada, Shopee, Tiki)"
     categories: list[dict[str, Any]] = field(default_factory=list)
 
     @classmethod
@@ -37,7 +37,7 @@ class ProblemSpec:
 
         return cls(
             project_name=project["name"],
-            platform=project["platform"],
+            platforms=project.get("platforms") or [project.get("platform", "Lazada")],
             target_records=project["target_records"],
             random_seed=project["random_seed"],
             label_classes=labeling["classes"],
@@ -52,7 +52,7 @@ class ProblemSpec:
         return {
             "project_name": self.project_name,
             "problem_type": self.problem_type,
-            "platform": self.platform,
+            "platforms": self.platforms,
             "data_source": self.data_source,
             "target_records": self.target_records,
             "random_seed": self.random_seed,
@@ -69,7 +69,7 @@ class ProblemSpec:
         return [
             f"Dự án: {self.project_name}",
             f"Bài toán: {self.problem_type} — {len(self.label_classes)} lớp",
-            f"Nền tảng: {self.platform} ({self.data_source})",
+            f"Nền tảng: {', '.join(self.platforms)} ({self.data_source})",
             f"Mục tiêu: {self.target_records:,} sản phẩm, stratified {self.category_count} danh mục",
             f"Nhãn: {', '.join(self.label_classes)}",
         ]
