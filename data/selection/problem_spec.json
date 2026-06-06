@@ -1,0 +1,101 @@
+{
+  "project_name": "lazada-product-classification",
+  "problem_type": "multi_class_classification",
+  "platform": "Lazada",
+  "data_source": "lazada.vn AJAX API (realtime snapshot)",
+  "target_records": 10000,
+  "random_seed": 42,
+  "label_classes": [
+    "Hot Trend",
+    "Best Seller",
+    "Best Deal",
+    "Normal"
+  ],
+  "expected_label_count": 4,
+  "min_class_ratio": 0.05,
+  "category_count": 16,
+  "total_planned_samples": 10000,
+  "stratified_by_category": true,
+  "categories": [
+    {
+      "name": "Điện thoại di động",
+      "path": "dien-thoai-di-dong",
+      "target_count": 625
+    },
+    {
+      "name": "Laptop",
+      "path": "laptop",
+      "target_count": 625
+    },
+    {
+      "name": "Máy tính bảng",
+      "path": "may-tinh-bang",
+      "target_count": 625
+    },
+    {
+      "name": "Pin sạc dự phòng",
+      "path": "pin-sac-du-phong",
+      "target_count": 625
+    },
+    {
+      "name": "Tai nghe không dây",
+      "path": "shop-wireless-earbuds",
+      "target_count": 625
+    },
+    {
+      "name": "Máy ảnh máy quay phim",
+      "path": "may-anh-may-quay-phim",
+      "target_count": 625
+    },
+    {
+      "name": "Tủ lạnh",
+      "path": "tu-lanh",
+      "target_count": 625
+    },
+    {
+      "name": "Máy giặt",
+      "path": "may-giat",
+      "target_count": 625
+    },
+    {
+      "name": "Máy lạnh",
+      "path": "may-lanh",
+      "target_count": 625
+    },
+    {
+      "name": "Áo phông & Áo ba lỗ",
+      "path": "shop-t-shirts-&-tanks",
+      "target_count": 625
+    },
+    {
+      "name": "Quần jeans",
+      "path": "shop-men-jeans",
+      "target_count": 625
+    },
+    {
+      "name": "Dưỡng da & Serum",
+      "path": "duong-da-va-serum",
+      "target_count": 625
+    },
+    {
+      "name": "Son thỏi",
+      "path": "son-thoi",
+      "target_count": 625
+    },
+    {
+      "name": "Bách hóa online",
+      "path": "bach-hoa-online",
+      "target_count": 625
+    },
+    {
+      "name": "Giường",
+      "path": "giuong",
+      "target_count": 625
+    },
+    {
+      "name": "Bóng đá",
+      "path": "bong-da",
+      "target_count": 625
+    }
+  ]
+}

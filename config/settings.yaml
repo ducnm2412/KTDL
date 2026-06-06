@@ -1,0 +1,66 @@
+project:
+  name: lazada-product-classification
+  target_records: 10000
+  platform: Lazada
+  random_seed: 42
+
+paths:
+  selection: data/selection
+  raw: data/raw
+  clean: data/clean
+  features: data/features
+  labeled: data/labeled
+  model_ready: data/model_ready
+  models: models
+  encoders: models/encoders
+  reports: reports
+  figures: reports/figures
+
+crawl:
+  method: requests_ajax
+  max_pages_per_category: 15
+  target_per_category_raw: 687
+  sleep_min_seconds: 3
+  sleep_max_seconds: 7
+  sleep_between_pages_min: 5
+  sleep_between_pages_max: 12
+  sleep_between_categories_min: 15
+  sleep_between_categories_max: 30
+  crawl_buffer_ratio: 1.1
+  login_wait_seconds: 10
+  request_timeout_seconds: 20
+
+  schedule:
+    categories_per_session: 2
+    rest_between_sessions_minutes: 5
+    max_retries_per_category: 2
+    stop_on_captcha: true
+    stop_on_failure: true
+    save_checkpoint_per_category: true
+    preferred_hours: [9, 10, 11, 14, 15, 16]
+
+clean:
+  price_lower_percentile: 0.1
+  price_upper_percentile: 99.9
+  sold_upper_percentile: 99.5
+  max_discount_rate: 95
+  reviews_upper_percentile: 99.0
+
+labeling:
+  classes:
+    - Hot Trend
+    - Best Seller
+    - Best Deal
+    - Normal
+  prob_threshold: 0.70
+  min_seed_per_class: 50
+  model_type: random_forest
+  min_class_ratio: 0.05
+
+encoding:
+  test_size: 0.2
+  stratify: true
+
+mining:
+  cv_folds: 5
+  primary_model: random_forest

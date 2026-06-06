@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Data (large files — bỏ comment nếu muốn commit raw)
+data/raw/**/*.json
+data/clean/*.json
+data/features/*.json
+data/labeled/*.json
+data/model_ready/*.json
+data/model_ready/*.parquet
+
+# Models & reports artifacts
+models/*.pkl
+models/*.joblib
+reports/figures/*.png
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+chrome_profile/
+
+# Jupyter
+.ipynb_checkpoints/
