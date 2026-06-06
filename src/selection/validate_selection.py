@@ -30,7 +30,7 @@ def validate_selection_config() -> ValidationResult:
     if total != target:
         result.errors.append(
             f"Tổng target_count ({total}) != target_records ({target}). "
-            "Cần chỉnh categories.yaml cho khớp stratified 10k."
+            "Cần chỉnh categories.yaml cho khớp stratified theo target_records."
         )
 
     if len(categories) == 0:

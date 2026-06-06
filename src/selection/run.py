@@ -37,6 +37,7 @@ def _write_feature_selection(out_dir: Path) -> Path:
 
 
 def _write_selection_report(out_dir: Path, spec: ProblemSpec, validation) -> Path:
+    target_formatted = f"{spec.target_records:,}".replace(",", ".")
     lines = [
         "# Báo cáo Bước 1 — Selection (KDD)",
         "",
@@ -45,7 +46,7 @@ def _write_selection_report(out_dir: Path, spec: ProblemSpec, validation) -> Pat
         "Selection xác định **cái gì sẽ được khai thác** trước khi thu thập và xử lý:",
         "- Phạm vi bài toán (4 lớp phân loại Lazada)",
         "- Biến cần thu thập từ API/crawl",
-        "- Cách lấy mẫu 10.000 sản phẩm (stratified 16 danh mục)",
+        f"- Cách lấy mẫu {target_formatted} sản phẩm (stratified 16 danh mục)",
         "- Tiêu chí chất lượng bản ghi",
         "",
         "Bước này **không crawl**, **không clean**, **không gán nhãn**.",
@@ -83,7 +84,7 @@ def _write_selection_report(out_dir: Path, spec: ProblemSpec, validation) -> Pat
             "",
             "Sau khi Selection PASS → chạy **Bước 2 (Preprocessing)**:",
             "1. Collection: crawl theo `sampling_plan.json`",
-            "2. Clean: normalize, missing, outlier, dedup → `lazada_10k_clean.json`",
+            "2. Clean: normalize, missing, outlier, dedup → file clean theo cấu hình",
         ]
     )
 

@@ -1,6 +1,6 @@
 project:
   name: lazada-product-classification
-  target_records: 10000
+  target_records: 15000
   platform: Lazada
   random_seed: 42
 
@@ -18,7 +18,7 @@ paths:
 
 crawl:
   method: requests_ajax
-  max_pages_per_category: 15
+  max_pages_per_category: 35
   target_per_category_raw: 687
   sleep_min_seconds: 3
   sleep_max_seconds: 7

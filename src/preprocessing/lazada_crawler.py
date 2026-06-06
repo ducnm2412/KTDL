@@ -81,7 +81,10 @@ def crawl_category(
         "target_count_crawl",
         crawl_cfg.get("target_per_category_raw", 687),
     )
-    pages_limit = max_pages or crawl_cfg.get("max_pages_per_category", 15)
+    pages_limit = max_pages or category.get(
+        "max_pages",
+        crawl_cfg.get("max_pages_per_category", 15),
+    )
     timeout = crawl_cfg.get("request_timeout_seconds", 20)
     max_retries = crawl_cfg.get("schedule", {}).get("max_retries_per_category", 2)
 
